@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   /* line-height: 1.5; */
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 a {
@@ -40,8 +40,10 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .container {
   /* max-width: 1158px;
@@ -246,26 +248,40 @@ address {
 
 .advantages-block {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
   list-style: none;
 }
 .advantages-card {
   display: flex;
   flex-direction: column;
-  flex-basis: 264px;
+  /* flex-basis: 264px; */
 }
 
 .advantages-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: capitalize;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  /* font-weight: 500; */
+  /* font-size: 20px; */
+  /* line-height: 1.2; */
+}
+.advantages-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* font-weight: 400; */
 }
 .adv-box {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -803,6 +819,18 @@ address {
   .container {
     max-width: 768px;
   }
+  /* Advantages 2 */
+  .advantages-block {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .advantages-card {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-title {
+    text-align: start;
+  }
 
   /* Our team 3 */
   .applications-blok {
@@ -832,6 +860,30 @@ address {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /* Advantages 2 */
+  .advantages-block {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .advantages-card {
+    flex-basis: 264px;
+  }
+  .advantages-title {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .advantages-description {
+    font-weight: 400;
+  }
+  .adv-box {
+    display: flex;
   }
   /* Our team 3 */
   .applications-blok {
